@@ -27,6 +27,8 @@
 	font-size: 1rem;
 	--user-font-scale: 1rem - 16px;
 	font-size: clamp(0.875rem, 0.4626rem + 1.0309vw + var(--user-font-scale), 1.125rem);
+	line-height: 1.5;
+	--big-screen-breakpoint: 800px;
 }
 
 body {
@@ -34,10 +36,68 @@ body {
 	width: 100%;
 	min-height: 100vh;
 	display: grid;
-	background: #f9fafb;
-	color: #111827;
+	background: #1B1C31;
+	color: white;
+}
+
+h1 {
+	font-size: 2.2em;
+	font-weight: 700;
+	margin-bottom: 0.6rem;
+}
+
+h2 {
+	font-size: 1.4em;
+	margin-bottom: 0.6rem;
+	font-weight: 400;
+}
+
+h3 {
+	font-size: 1.2em;
+	margin-bottom: 0.6rem;
+	font-weight: 400;
+}
+
+p {
+	margin-bottom: 0.6rem;
+	line-height: 1.9;
 }
 
 section {
-	padding: 2rem;
+	padding-block: 6em;
+	width: clamp(40%, 70rem, 80%);
+	margin-inline: auto;
 }
+
+.button-link {
+	display: inline-block;
+	margin-right: 1rem;
+	padding: 12px 24px;
+	background: #55566D;
+	border-radius: 8px;
+	color: white;
+	text-decoration: none;
+}
+
+.button-link:hover {
+	background: #373747;
+}
+
+@media screen and (min-width: 1200px) {
+	#introduction {
+		display: flex;
+		align-items: center;
+		gap: 8rem;
+	}
+}
+
+#portrait {
+	display: block;
+	width: 14em;
+	height: 14em;
+	border-radius: 50%;
+	margin-bottom: 3rem;
+	margin-inline: auto;
+}
+
+
