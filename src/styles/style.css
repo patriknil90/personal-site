@@ -24,6 +24,8 @@
 	font-family: 'Arvo', Garamond;
 	font-size: 16px;
 	line-height: 1.5;
+	--primary-color: #1B1C31;
+	--secondary-color: #55566D;
 }
 
 html {
@@ -36,7 +38,7 @@ body {
 	min-height: 100vh;
 	padding-block: 5rem;
 	display: grid;
-	background: #1B1C31;
+	background: var(--primary-color);
 	color: white;
 	letter-spacing: 0.07rem;
 }
@@ -78,7 +80,7 @@ section {
 	margin-right: 1em;
 	margin-bottom: 1em;
 	padding: 0.8em 1.5em;
-	background: #55566D;
+	background: var(--secondary-color);
 	border-radius: 0.5rem;
 	color: white;
 	text-decoration: none;
@@ -86,6 +88,15 @@ section {
 
 .button-link:hover {
 	background: #373747;
+}
+
+.badge {
+	font-size: 0.7em;
+	margin-inline: 0.4rem;
+	border-radius: 0.25rem;
+	padding: 0.2em 0.4em 0 0.4em;
+	background: white;
+	color: var(--primary-color);
 }
 
 #introduction {
