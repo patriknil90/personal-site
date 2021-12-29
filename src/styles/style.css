@@ -91,12 +91,16 @@ section {
 }
 
 .badge {
-	font-size: 0.7em;
 	border-radius: 0.25rem;
-	padding: 0.2em 0.4em 0 0.4em;
+	padding: 0.2em 0.4em;
 	background: white;
 	color: var(--primary-color);
 	white-space: nowrap;
+}
+
+h3 > .badge {
+	font-size: 0.7em;
+	padding: 0.2em 0.4em 0 0.4em;
 }
 
 #introduction {
