@@ -112,6 +112,7 @@ h3 > .badge {
 	width: 12em;
 	height: 12em;
 	border-radius: 50%;
+	margin-inline: auto;
 	margin-bottom: 3rem;
 }
 
@@ -123,12 +124,13 @@ h3 > .badge {
 		gap: 5rem;
 		margin-bottom: 5rem;
 	}
-
+	
 	#contact-card h2 {
 		margin-bottom: 0;
 	}
-
+	
 	#portrait {
+		margin-inline: unset;
 		margin-bottom: 0;
 	}
 }
