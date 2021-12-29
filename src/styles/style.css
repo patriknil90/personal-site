@@ -24,57 +24,60 @@
 
 :root {
 	font-family: 'Arvo', serif;
-	font-size: 1rem;
-	--user-font-scale: 1rem - 16px;
-	font-size: clamp(0.875rem, 0.4626rem + 1.0309vw + var(--user-font-scale), 1.125rem);
+	font-size: 16px;
 	line-height: 1.5;
-	--big-screen-breakpoint: 800px;
+}
+
+html {
+	font-size: 100%;
 }
 
 body {
 	padding: 0;
 	width: 100%;
 	min-height: 100vh;
+	padding-block: 5rem;
 	display: grid;
 	background: #1B1C31;
 	color: white;
+	letter-spacing: 0.07rem;
 }
 
 h1 {
-	font-size: 2.2em;
+	font-size: 2.1rem;
 	font-weight: 700;
-	margin-bottom: 0.6rem;
 }
 
 h2 {
-	font-size: 1.4em;
-	margin-bottom: 0.6rem;
+	font-size: 1.6rem;
+	margin-bottom: 0.6em;
 	font-weight: 400;
 }
 
 h3 {
-	font-size: 1.2em;
-	margin-bottom: 0.6rem;
-	font-weight: 400;
+	font-size: 1.4rem;
+	margin-bottom: 0.6em;
+	font-weight: 700;
 }
 
 p {
-	margin-bottom: 0.6rem;
-	line-height: 1.9;
+	font-size: 1.15rem;
+	margin-bottom: 1.6em;
 }
 
 section {
-	padding-block: 6em;
+	margin-block: 0.5rem;
 	width: clamp(40%, 70rem, 80%);
 	margin-inline: auto;
 }
 
 .button-link {
 	display: inline-block;
-	margin-right: 1rem;
-	padding: 12px 24px;
+	margin-right: 1em;
+	margin-bottom: 1em;
+	padding: 0.8em 1.5em;
 	background: #55566D;
-	border-radius: 8px;
+	border-radius: 0.5rem;
 	color: white;
 	text-decoration: none;
 }
@@ -83,7 +86,11 @@ section {
 	background: #373747;
 }
 
-@media screen and (min-width: 1200px) {
+#introduction {
+	margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 70em) {
 	#introduction {
 		display: flex;
 		align-items: center;
