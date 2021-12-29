@@ -65,6 +65,10 @@ p {
 	margin-bottom: 1.6em;
 }
 
+a {
+	color: #B4B5DB;
+}
+
 section {
 	margin-block: 0.5rem;
 	width: clamp(40%, 70rem, 80%);
