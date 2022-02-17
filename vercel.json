@@ -2,7 +2,7 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "headers": [
     {
-      "source": "/fonts/arvo-v14-latin-700.woff2",
+      "source": "/assets/fonts/arvo-v14-latin-700.woff2",
       "headers": [
         {
           "key": "Cache-Control",
@@ -11,7 +11,7 @@
       ]
     },
     {
-      "source": "/fonts/arvo-v14-latin-regular.woff2",
+      "source": "/assets/fonts/arvo-v14-latin-regular.woff2",
       "headers": [
         {
           "key": "Cache-Control",
